@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Recommendations</title>
+</head>
+<body>
+    <h1>Extracted Skills</h1>
+    <ul>
+        {% for skill in skills %}
+            <li>{{ skill }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Recommended Job Listings</h1>
+    {% if jobs %}
+        <ul>
+            {% for job in jobs %}
+                <li>
+                    <strong>Title:</strong> {{ job.title }}<br>
+                    <strong>Address:</strong> {{ job.address }}<br>
+                    <strong>Level:</strong> {{ job.level }}<br>
+                    <strong>Link:</strong> <a href="{{ job.link }}">View Job</a><br>
+                    <strong>Required Skills:</strong> {{ job.required_skills }}
+                </li>
+                <hr>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No matching jobs found.</p>
+    {% endif %}
+</body>
+</html>
