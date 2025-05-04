@@ -10,20 +10,6 @@ A web-based application that analyzes your uploaded CV and recommends matching j
 - Beautiful, responsive UI using Bootstrap
 - Supports uploading new CVs anytime
 
-## 📂 Project Structure
-├── app.py
-├── templates/
-│ ├── index.html
-│ ├── result.html
-│ └── recommendation.html
-├── static/
-│ └── (optional: CSS/JS files)
-├── data/
-│ └── Internship_job_listings_with_skills.csv
-├── requirements.txt
-└── README.md
-
-
 ## ⚙️ Installation
 
 1. **Clone the repository:**
